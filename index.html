@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <title>Resume</title>
+
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            font-family: Lora;
+        }
+
+        #Body {
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: flex;
+        }
+
+            #SideBar {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+                #Profile {
+                    border-bottom: 10px dotted rgb(76, 76, 98);
+                    flex-grow: 20;
+
+                }
+                    img {
+                        position: absolute;
+                        margin-left: 5%;
+                        border-radius: 50%;
+                        margin-top: 20px;
+                    }
+
+                    #Name {
+                        position: absolute;
+                        margin-top: 15%;
+                        margin-left: 6.5%;
+                    }
+
+                #Contact {
+                    flex-shrink: 1;
+                }
+                    li {
+                        list-style:square;
+                        font-size: larger;
+                        margin-top: 5%;
+                    }
+
+                #Skills {
+                    flex-shrink: 2;
+                }
+
+                    #Title {
+                        margin-left: 5%;
+                        border-bottom: 5px dotted rgb(76, 76, 98);
+                    }
+
+            #Main {
+                flex-grow: 1;
+                background-color: rgb(202, 202, 202);
+                display: flex;
+                flex-direction: column;
+            }
+                #Top {
+                    flex-grow: 1;
+                    border-bottom: 5px solid rgba(76, 76, 98, 0.578);
+                }
+
+                #Mid {
+                    flex-grow: 1;
+                }
+
+                #Bot {
+                    flex-grow: 1;
+                }
+
+            #Empty {
+                flex-grow: 50;
+                background-color: white;
+            }
+
+            p {
+                font-weight: bolder;
+
+            }
+
+            h2 {
+                margin-left: 50px;
+                margin-top: 40px;
+            }
+    </style>
+</head>
+<body>
+    <div id="Body">
+        <div id="SideBar">
+            <div id="Profile">
+                <img src="IMG_20221015_224055_01__01.jpg" width="200px" height="200px">
+                <h1 id="Name">Aurora Lugo</h1>
+            </div>
+
+            <div id="Contact">
+                <h1 id="Title">Contact</h1>
+                
+                <ul>
+                    <li>
+                        (Phone) 000-000-0000
+                    </li>
+                    <li>
+                        (Email) Realemail@gmail.com
+                    </li>
+                    <li>
+                        (Instagram) @RealUsername11_
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Skills">
+                <h1 id="Title">Skills</h1>
+                    <ul>
+                        <li>
+                            Independent Worker
+                        </li>
+                        <li>
+                            Friendly
+                        </li>
+                        <li>
+                            Creative
+                        </li>
+                        <li>
+                            Can do a wide variety of things
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        
+        <div id="Main">
+            <div id="Top">
+                <h2> </h2>
+            </div>
+
+            <div id="Mid">
+                <h1 id="Title">
+                    Education
+                </h1>
+
+                <ul>
+                    <li>
+                        High School
+
+                        <p>
+                            I am currently in my Junior year of High School.
+                        </p>
+                    </li>
+                    <li>
+                        College
+                            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </li>
+                    <li>
+                        Other
+                            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Bot">
+                <h1 id="Title">
+                    Work Experience
+                </h1>
+
+                <ul>
+                    <li>
+                        Job #1
+
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Empty">
+            
+        </div>
+    </div>
+</body>
+</html>
